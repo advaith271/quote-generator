@@ -1,7 +1,7 @@
 import { getIDToken } from "./auth";
 import { Quote,LikedQuote,Profile } from "../types";
 
-const API_BASE_URL="http://localhost:8000";
+const API_BASE_URL="https://adhu271.pythonanywhere.com";
 
 const getAuthHeaders = async (): Promise<Record<string, string>> => {
     const token=await getIDToken();
